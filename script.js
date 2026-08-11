@@ -78,15 +78,16 @@ function playGame() {
 
     // Handling who's gonna be the winner
     if (humanScore > computerScore) {
-        console.log("The human wins!")
+        alert("The human wins!")
     } else if (computerScore > humanScore) {
-        console.log("The machine wins!")
+        alert("The machine wins!")
     } else {
-        console.log("There's no winner. Draw!")
+        alert("There's no winner. Draw!")
     }
 
-    console.log(`Human: ${humanScore}`)
-    console.log(`Machine: ${computerScore}`)
+    alert(`Result:
+        Human: ${humanScore}
+        Machine: ${computerScore}`)
 }
 
 playGame()

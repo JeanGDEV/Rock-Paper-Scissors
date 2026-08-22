@@ -26,11 +26,6 @@ function getComputerChoice() {
     }
 }
 
-function getHumanChoice() {
-    let promptChoice = prompt("What's going to be your next move? Enter: Rock, Paper, or Scissors").toLowerCase().trim()
-    return promptChoice
-}
-
 // Handling rounds
 
 function playRound(humanChoice, computerChoice) {

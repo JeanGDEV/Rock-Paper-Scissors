@@ -14,12 +14,8 @@ const winnerMessage = document.querySelector("#winner")
 
 const humanScore = document.querySelector("#human-score")
 const computerScore = document.querySelector("#computer-score")
-console.log(typeof humanScore)
 let computerValue = 0
 let humanValue = 0
-
-humanScore.textContent = humanValue
-computerScore.textContent = computerValue
 
 // Choices Section
 
@@ -82,6 +78,15 @@ function playRound(humanChoice, computerChoice) {
     } else if (humanChoice == "scissors" && computerChoice == "scissors") {
         resultMessage.textContent = "Draw!"
     }
+    showWinner()
 
 }
 
+function showWinner() {
+    if (humanValue == 5) {
+        winnerMessage.textContent = "The Human Wins!"
+    }
+    if (computerValue == 5) {
+        winnerMessage.textContent = "The Computer Wins!"
+    }
+}

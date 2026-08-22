@@ -83,10 +83,15 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function showWinner() {
-    if (humanValue == 5) {
-        winnerMessage.textContent = "The Human Wins!"
-    }
-    if (computerValue == 5) {
-        winnerMessage.textContent = "The Computer Wins!"
+    if (humanValue === 5 || computerValue === 5) {
+        rockButton.disabled = true
+        paperButton.disabled = true
+        scissorsButton.disabled = true
+
+        if (humanValue === 5) {
+            winnerMessage.textContent = "The Human Wins!"
+        } else {
+            winnerMessage.textContent = "The Computer Wins!"
+        }
     }
 }

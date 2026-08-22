@@ -1,6 +1,15 @@
 let humanScore = 0
 let computerScore = 0
 
+// Buttons
+const rockButton = document.querySelector("#rock-btn")
+const paperButton = document.querySelector("#paper-btn")
+const scissorsButton = document.querySelector("#scissors-btn")
+
+rockButton.addEventListener("click", playRound("rock", getComputerChoice()))
+paperButton.addEventListener("click", playRound("paper", getComputerChoice()))
+scissorsButton.addEventListener("click", playRound("scissors", getComputerChoice()))
+
 
 // Choices Section
 

@@ -69,13 +69,6 @@ function playRound(humanChoice, computerChoice) {
 
 function playGame() {
 
-    // 5 Rounds
-    playRound(getHumanChoice(), getComputerChoice())
-    playRound(getHumanChoice(), getComputerChoice())
-    playRound(getHumanChoice(), getComputerChoice())
-    playRound(getHumanChoice(), getComputerChoice())
-    playRound(getHumanChoice(), getComputerChoice())
-
     // Handling who's gonna be the winner
     if (humanScore > computerScore) {
         alert("The human wins!")
